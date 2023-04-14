@@ -13,9 +13,9 @@ const Logo = () => {
       <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl h-screen flex flex-col justify-center items-center ">
         <img className="fade-in" src={logo} alt="" />
         <div className="absolute left-[43%] flex justify-center items-center fade-in">
-          <h1 className="text-8xl font-bold logo-font text-[#666181] -mr-8">BNGL</h1>
+          <h1 className="text-8xl font-bold logo-font text-[#666181] -mr-9">BNGL</h1>
           <Lottie className="w-52" animationData={Globe3} loop={true} />
-          <h1 className="text-8xl font-bold logo-font text-[#666181] -ml-8">BAL</h1>
+          <h1 className="text-8xl font-bold logo-font text-[#666181] -ml-9">BAL</h1>
         </div>
       </div>
     </Link>
