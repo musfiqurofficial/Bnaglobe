@@ -1,8 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const FaithFirst = () => {
   const [show, setShow] = useState(false);
+  const navigate = useNavigate();
+  const [redirect, setRedirect] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setRedirect(true);
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
+  if (redirect) {
+    navigate("/bnglobal");
+    return null;
+  }
 
   useEffect(() => {
     const timeout = setTimeout(() => {
