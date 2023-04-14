@@ -1,11 +1,14 @@
-
+:root {
+  --fade-duration: 3s;
+  --fade-timing-function: ease-in-out;
+}
 
 .fade-in {
   opacity: 0;
-  animation: fade-in-animation 3s ease-in-out forwards;
+  animation: fadeIn var(--fade-duration) var(--fade-timing-function) forwards;
 }
 
-@keyframes fade-in-animation {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }

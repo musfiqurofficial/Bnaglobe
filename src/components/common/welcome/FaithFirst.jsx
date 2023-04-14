@@ -9,7 +9,7 @@ const FaithFirst = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setRedirect(true);
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearTimeout(timeoutId);
