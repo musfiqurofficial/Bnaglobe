@@ -12,8 +12,8 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl h-screen flex flex-col justify-center items-center">
-        <h1 className="text-3xl sm:text-4xl font-bold fade-in text-center uppercase">
+      <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl h-screen flex flex-col justify-center items-center px-10">
+        <h1 className="text-3xl sm:text-5xl font-bold fade-in text-center uppercase">
           THE PREMIER CLUB FOR INNOVATORS
         </h1>
         {show && (
