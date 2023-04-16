@@ -24,18 +24,18 @@ const FaithFirst = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShow(true);
-    }, 1000);
+    }, 1200);
 
     return () => clearTimeout(timeout);
   }, []);
   return (
     <Link to="/bnglobal">
-      <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl h-screen flex flex-col justify-center items-center">
+      <div className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl h-screen flex flex-col justify-center items-center relative">
         <h1 className="text-5xl sm:text-7xl font-semibold text-center uppercase fade-in text-[#6b6b6b]">
           Faith First
         </h1>
         {show && (
-          <h5 className="text-3xl mt-4 sm:mt-8 text-center uppercase fade-in text-[#6b6b6b]">
+          <h5 className="absolute top-[50%] text-2xl sm:text-3xl mt-10 sm:mt-14 text-center uppercase fade-in text-[#6b6b6b]">
             Financials Follow
           </h5>
         )}
