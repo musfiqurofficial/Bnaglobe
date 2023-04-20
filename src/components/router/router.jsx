@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/MainLayout";
 import Error from "../error/Error";
 import Home from "../pages/Home";
-import FaithFirst from "../common/welcome/FaithFirst";
 import Logo from "../common/welcome/Logo";
+import FaithFirst from "../common/welcome/FaithFirst";
 
 export const router = createBrowserRouter([
   {
@@ -26,4 +26,3 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
-
