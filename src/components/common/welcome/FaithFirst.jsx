@@ -13,7 +13,7 @@ const FaithFirst = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setRedirect(true);
-    }, 5300);
+    }, 4000);
 
     return () => {
       clearTimeout(timeoutId);
@@ -32,7 +32,7 @@ const FaithFirst = () => {
 
     const timeoutGlobal = setTimeout(() => {
       setShowGlobal(true);
-    }, 3200);
+    }, 2000);
 
     const timeoutN = setTimeout(() => {
       setShowN(true);
